@@ -1,0 +1,47 @@
+$color_blue: #657aca;
+
+.watch{
+	border:5px solid $color_blue;
+	border-radius:50%;
+	height:500px;
+	position:relative;
+  margin: 100px;
+	width:500px;
+	&__arrow{
+    background-color: $color_blue;
+    transform-origin: 50% 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition:.1s;
+		width: 1px;
+	}
+	& .hour{
+		height:130px;
+    background-color: darken($color_blue,40%);
+	}
+	& .mins{
+		height:180px;
+    background-color: darken($color_blue,20%);
+	}
+	& .secs{
+    background-color: $color_blue;
+		height:220px;
+	}
+	& .delimiter{
+    left:50%;
+    position:absolute;
+    padding:0 50% 50% 0;
+    transform-origin: 0 100%;
+    &_sign{
+			background-color: $color_blue;
+			height:10px;
+    	left: -1px;
+			position: absolute;
+			width: 3px;
+		}
+		&__big{
+			height:20px;
+		}
+	}
+}
